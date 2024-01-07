@@ -34,7 +34,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', '')
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['boutique-ado-doug.herokuapp.com', 'localhost', '127.0.0.1', 'boutique-ado-doug-0793d3d1f1bc.herokuapp.com', '8000-dougyb83-boutiqueadov1-vgdjnb9x821.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = ['boutique-ado-doug-v2.herokuapp.com', 'localhost', '127.0.0.1', '8000-dougyb83-boutiqueadov1-vgdjnb9x821.ws-eu107.gitpod.io']
 
 
 # Application definition
@@ -115,7 +115,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
